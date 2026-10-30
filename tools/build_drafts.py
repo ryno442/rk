@@ -530,9 +530,8 @@ def page_aep(s):
                 'See our <a href="/medicare-supplement-birthday-rule/">Illinois '
                 "Birthday Rule guide</a>.</p>")
     elif s["abbr"] == "IN":
-        # Window timing differs between sources; keep it general until confirmed with Indiana DOI.
         bday = ("<h3>Indiana's Birthday Rule</h3><p>Starting in 2026, Indiana gives Medigap policyholders a "
-                "60-day window each year, tied to their birthday, to switch to the same plan letter with any "
+                "60-day window each year, opening 31 days before their birthday, to switch to the same plan letter with any "
                 "insurer without health questions. For example, you can move from one company's Plan G to "
                 "another company's Plan G if the premium is lower. Medicare Advantage plans are not included. "
                 '<a href="https://help.ihealthagents.com/hc/en-us/articles/36287266392343-Can-I-qualify-for-a-'
