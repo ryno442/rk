@@ -83,9 +83,8 @@ SITES = {
     ),
     "in": dict(
         name="Indiana Health Agents", domain="indianahealthagents.com", state="Indiana", abbr="IN",
-        # BLOCKER: Indiana phone number unknown (no skill notes, site unreachable). Replace both pairs.
-        phone="[INDIANA PHONE]", tel="+1PHONE-VERIFY",
-        mphone="[INDIANA PHONE]", mtel="+1PHONE-VERIFY",
+        phone="(312) 726-6565", tel="+13127266565",
+        mphone="(312) 726-6565", mtel="+13127266565",
         contact="/contact-us/",  # VERIFY slug
         exchange="HealthCare.gov", exchange_url="https://www.healthcare.gov/",
         oe="November 1, 2026 through January 15, 2027", jan1="December 15, 2026",

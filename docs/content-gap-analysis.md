@@ -74,7 +74,7 @@ other states.
 - Do not add STM. The no-subsidy draft explains that it's banned.
 
 ### Indiana (indianahealthagents.com)
-No skill notes and no site access, so these drafts are built from scratch. **Blocker: the Indiana phone number is unknown.** Every IN draft shows `[INDIANA PHONE]` until `SITES["in"]` in the generator is filled in, and the contact slug needs confirming.
+No skill notes and no site access, so these drafts are built from scratch. Phone: (312) 726-6565 (`tel:+13127266565`), the same number as Florida, confirmed by Ryan 10/30/26. The contact slug still needs confirming.
 - **Losing HIP coverage** (drafted: `drafts/in/losing-hip-coverage.html`). This is the biggest Indiana-only opportunity. HIP work requirements start 1/1/2027 (80 hrs/month or $580/month, ages 19-64, 3-month lookback, 6-month redeterminations), and the state estimates 58,000+ could lose coverage. Key point: anyone who loses Medicaid for work-requirement non-compliance is barred from a premium tax credit (OBBBA s.71119), and the 150% FPL low-income SEP is gone.
 - Shared set: OE 2027, no-subsidy, AEP, hospital indemnity, CI/cancer, final expense, ICHRA, and STM. Indiana allows initial terms up to 364 days and up to 36 months total, with a $2M minimum benefit (IC 27-8-5.9).
 - Medicare counseling program in the disclaimer: Indiana SHIP, 1-800-452-4800.
