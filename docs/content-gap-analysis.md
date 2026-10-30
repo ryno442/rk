@@ -50,7 +50,7 @@ other states.
 
 ### Illinois (ilhealthagents.com)
 - **Illinois Medigap Birthday Rule** page. This is a state-specific ranking opportunity (CA already ranks on its own birthday rule content). Draft: `drafts/il/medicare-supplement-birthday-rule.html`.
-  **Has a VERIFY block.** Sources disagree on whether the switch must stay with the current insurer. Check 215 ILCS 5/363 and fix the marked paragraph before publishing.
+  The switch must be to a policy from the current insurer or an affiliated company (confirmed by Ryan 10/30/26), so the page explains insurer-family moves and the health questions for moving to an unrelated company.
 - Get Covered Illinois (Illinois's own marketplace since PY2026) explainer: the OE page covers dates. A standalone "Get Covered Illinois vs. HealthCare.gov" page is a further opportunity.
 - ICHRA page. Draft included.
 
@@ -78,6 +78,7 @@ No skill notes and no site access, so these drafts are built from scratch. Phone
 - **Losing HIP coverage** (drafted: `drafts/in/losing-hip-coverage.html`). This is the biggest Indiana-only opportunity. HIP work requirements start 1/1/2027 (80 hrs/month or $580/month, ages 19-64, 3-month lookback, 6-month redeterminations), and the state estimates 58,000+ could lose coverage. Key point: anyone who loses Medicaid for work-requirement non-compliance is barred from a premium tax credit (OBBBA s.71119), and the 150% FPL low-income SEP is gone.
 - Shared set: OE 2027, no-subsidy, AEP, hospital indemnity, CI/cancer, final expense, ICHRA, and STM. Indiana allows initial terms up to 364 days and up to 36 months total, with a $2M minimum benefit (IC 27-8-5.9).
 - Medicare counseling program in the disclaimer: Indiana SHIP, 1-800-452-4800.
+- Indiana Medigap birthday rule (new in 2026: 60 days, same plan letter, any insurer) is covered in the AEP draft and links the existing help center article. Sources differ on when the window opens, so the page keeps the timing general.
 - Not drafted: Indiana carrier pages (Anthem, CareSource, Ambetter/MHS, UHC, etc.). Confirm which exist first.
 
 ### Other sister sites (AZ, CO, OH, WI)
@@ -106,7 +107,7 @@ them by adding entries to `SITES` in the generator (phone, exchange, OE dates, S
 | Indiana HIP work requirements | Start 1/1/2027; 80 hrs or $580/month; 3-month lookback | in.gov/fssa/hip; Mirror Indy |
 | PTC bar after work-requirement loss | OBBBA s.71119 | NHeLP / analyses |
 | IN STM | 364-day initial, 36 months total, $2M minimum benefit | healthinsurance.org; IDOI Bulletin 244 |
-| IL Medigap birthday rule | 45 days from birthday, ages 65-75, equal or lesser benefits | P.A. 102-0142; NAIC chart (**same vs any insurer unresolved**) |
+| IL Medigap birthday rule | 45 days from birthday, ages 65-75, equal or lesser benefits, current insurer or an affiliate | P.A. 102-0142; NAIC chart. Same insurer or an affiliate (confirmed by Ryan) |
 
 **Not confirmed, and deliberately left out:** a reported 2026 rename of ICHRA to "CHOICE Arrangement"
 (only one source), and 2027 Part B premium and deductibles (CMS usually announces these in mid-November).

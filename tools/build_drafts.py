@@ -526,8 +526,18 @@ def page_aep(s):
     elif s["abbr"] == "IL":
         bday = ("<h3>Illinois' Birthday Rule</h3><p>Illinois gives Medigap policyholders age 65 to 75 a 45-day "
                 "window each year, starting on their birthday, to switch to a plan with equal or lesser benefits "
-                'without medical underwriting. See our <a href="/medicare-supplement-birthday-rule/">Illinois '
+                "from their current insurer or an affiliated company, without medical underwriting. "
+                'See our <a href="/medicare-supplement-birthday-rule/">Illinois '
                 "Birthday Rule guide</a>.</p>")
+    elif s["abbr"] == "IN":
+        # Window timing differs between sources; keep it general until confirmed with Indiana DOI.
+        bday = ("<h3>Indiana's Birthday Rule</h3><p>Starting in 2026, Indiana gives Medigap policyholders a "
+                "60-day window each year, tied to their birthday, to switch to the same plan letter with any "
+                "insurer without health questions. For example, you can move from one company's Plan G to "
+                "another company's Plan G if the premium is lower. Medicare Advantage plans are not included. "
+                '<a href="https://help.ihealthagents.com/hc/en-us/articles/36287266392343-Can-I-qualify-for-a-'
+                'Medicare-Supplement-Plan-in-Indiana-without-any-medical-questions" target="_blank" '
+                'rel="noopener">Read how the Indiana birthday rule works</a>.</p>')
     faqs = [
         (f"When is Medicare open enrollment for {YEAR}?",
          f"The annual enrollment period runs October 15 through December 7, 2026. Changes take effect "
@@ -536,7 +546,8 @@ def page_aep(s):
          f"$2,400 for covered drugs, up from $2,100 in 2026. The maximum standard deductible rises to $700."),
         ("Can I switch Medicare Supplement plans during annual enrollment?",
          "You can apply any time, but annual enrollment does not give you a guaranteed right to a Medigap plan. "
-         "Outside a guaranteed-issue situation, the carrier can ask health questions and decline you."),
+         "Outside a guaranteed-issue situation, the carrier can ask health questions and decline you."
+         + (f" {s['state']}'s birthday rule, described above, is an exception." if bday else "")),
         ("What if I miss December 7?",
          "If you are in a Medicare Advantage plan, you get one change between January 1 and March 31, either to "
          "another Advantage plan or back to Original Medicare."),
@@ -711,43 +722,50 @@ def page_il_birthday(s):
     faqs = [
         ("What is the Illinois Medigap birthday rule?",
          "An annual 45-day window, starting on your birthday, when Illinois Medigap policyholders age 65 to 75 can "
-         "move to a plan with equal or lesser benefits without medical underwriting."),
+         "move to a plan with equal or lesser benefits from their current insurer or an affiliated company, "
+         "without medical underwriting."),
         ("Who qualifies?",
          "Illinois residents age 65 through 75 who already have a Medicare Supplement policy."),
+        ("Can I switch to a different insurance company?",
+         "Only to an insurer affiliated with your current one. Moving to an unrelated company usually means "
+         "answering health questions, and the new insurer can decline you."),
         ("Can I upgrade to a plan with more benefits?",
          "Not under the birthday rule. Moving to richer benefits usually means answering health questions."),
         ("Does it apply to Medicare Advantage?",
          "No. The birthday rule is for Medicare Supplement (Medigap) policies only."),
     ]
     body = f"""
-<!-- VERIFY BEFORE PUBLISHING: confirm against 215 ILCS 5/363 whether the switch must be with the SAME insurer or may be
-with ANY insurer. Sources disagree. Edit the "Which plans" paragraph to match the statute. -->
 <p class="iha-lead">If you have a Medicare Supplement plan in Illinois and you are between 65 and 75, you get a
 <strong>45-day window every year, starting on your birthday</strong>, to switch to a plan with equal or lesser benefits
-without medical underwriting. Medigap premiums tend to rise as you age, so this window is worth checking every year.</p>
+from your current insurer or an affiliated company, without medical underwriting. Medigap premiums tend to rise as you
+age, so this window is worth checking every year.</p>
 
 <h2>How the Illinois birthday rule works</h2>
 <ul>
 <li>The window opens on your birthday and lasts 45 days</li>
 <li>You must be age 65 through 75 and already have a Medigap policy</li>
 <li>The new plan must have equal or lesser benefits (for example Plan G to Plan G, or Plan G to Plan N)</li>
+<li>The new policy must come from your current insurer or one of its affiliated companies</li>
 <li>No health questions, so a health condition cannot be used to decline you</li>
 <li>Insurers must notify eligible policyholders about the window</li>
 </ul>
 
 <h2>Which plans you can move to</h2>
-<p>[VERIFY: state whether the new policy may be from any insurer or must be from your current insurer.] We compare
-the options open to you and handle the switch so your old policy ends the day the new one starts, with no gap.</p>
+<p>The birthday rule lets you move within your insurer's family of companies, not to any insurer. Many Medigap
+carriers sell through more than one affiliated company, sometimes at different premiums for the same plan letter. We
+check what your insurer and its affiliates offer and handle the switch so your old policy ends the day the new one
+starts, with no gap. Moving to an unrelated company is still possible, but outside a guaranteed-issue situation it
+means answering health questions.</p>
 
 <div class="iha-box"><strong>Example:</strong> You have Plan G and your premium went up at renewal. In the 45 days after
-your birthday you can apply for another Plan G at a lower premium without health questions. Benefits are standardized,
-so a Plan G covers the same things whichever company issues it.</div>
+your birthday you can move to Plan N with the same insurer, or to a Plan G from an affiliated company at a lower premium,
+without health questions. Benefits are standardized, so a Plan G covers the same things whichever company issues it.</div>
 
 <h2>What to do before your birthday</h2>
 <ul>
 <li>Note your birthday on the calendar and call us about two weeks before</li>
 <li>Have your current policy and premium handy</li>
-<li>We compare Plan G and Plan N premiums for your ZIP code and age</li>
+<li>We compare your insurer's and its affiliates' Plan G and Plan N premiums for your ZIP code and age</li>
 <li>Do not cancel your current policy until the new one is approved</li>
 </ul>
 {cta(s, "Check your birthday rule savings", "A two-minute comparison can show whether a switch lowers your premium.", quote_url=SUNFIRE, quote_label="Compare Plans Online", medicare=True)}
@@ -757,8 +775,8 @@ so a Plan G covers the same things whichever company issues it.</div>
     return dict(
         slug="medicare-supplement-birthday-rule", title=title, faqs=faqs, body=body,
         seo="Illinois Medigap Birthday Rule: 45-Day Switch Window",
-        meta=("Illinois Medigap policyholders age 65-75 get a 45-day window after their birthday to switch to an "
-              "equal or lesser plan with no health questions. How it works."),
+        meta=("Illinois Medigap holders age 65-75 get 45 days after each birthday to switch to an equal or lesser "
+              "plan with their insurer or an affiliate. No health questions."),
         parent="Under Medicare",
         sites=["il"])
 
