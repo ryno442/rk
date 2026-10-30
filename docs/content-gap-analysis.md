@@ -78,7 +78,7 @@ No skill notes and no site access, so these drafts are built from scratch. Phone
 - **Losing HIP coverage** (drafted: `drafts/in/losing-hip-coverage.html`). This is the biggest Indiana-only opportunity. HIP work requirements start 1/1/2027 (80 hrs/month or $580/month, ages 19-64, 3-month lookback, 6-month redeterminations), and the state estimates 58,000+ could lose coverage. Key point: anyone who loses Medicaid for work-requirement non-compliance is barred from a premium tax credit (OBBBA s.71119), and the 150% FPL low-income SEP is gone.
 - Shared set: OE 2027, no-subsidy, AEP, hospital indemnity, CI/cancer, final expense, ICHRA, and STM. Indiana allows initial terms up to 364 days and up to 36 months total, with a $2M minimum benefit (IC 27-8-5.9).
 - Medicare counseling program in the disclaimer: Indiana SHIP, 1-800-452-4800.
-- Indiana Medigap birthday rule (new in 2026: 60 days, same plan letter, any insurer) is covered in the AEP draft and links the existing help center article. Sources differ on when the window opens, so the page keeps the timing general.
+- Indiana Medigap birthday rule (new in 2026: 60-day window opening 31 days before the birthday, same plan letter, any insurer; timing confirmed by Ryan 10/30/26) is covered in the AEP draft and links the existing help center article.
 - Not drafted: Indiana carrier pages (Anthem, CareSource, Ambetter/MHS, UHC, etc.). Confirm which exist first.
 
 ### Other sister sites (AZ, CO, OH, WI)
