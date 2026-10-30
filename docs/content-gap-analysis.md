@@ -117,7 +117,7 @@ The AEP draft has an `ANNUAL UPDATE` placeholder for them.
 1. Confirm no existing page covers the topic (search `status=any`).
 2. Create as **draft**, set the page title to the H1 shown in the file header, and set layout `et_no_sidebar`.
 3. Paste the file body into a Code module (TX, IL, FL, CA) or into the cloned template's content area (PA).
-4. Preview: one H1, the FAQ toggles open, the phone links dial, and the "Have an Agent Call Me" CTA opens `/contact-us/` (confirmed for all six sites).
+4. Preview: one H1, the FAQ toggles open, the phone links dial, and the "Have an Agent Call Me" CTA opens the site's contact page: `/contact/` on PA (existing page 19), `/contact-us/` everywhere else.
 5. Paste the SEO title and meta description into Yoast by hand. Yoast fields aren't REST-writable.
 6. Publish, add to the correct menu parent (see the "Suggested parent" line in the header), and request indexing in GSC.
 7. The drafts cross-link: OE links to no-subsidy, which links to AEP, hospital indemnity, CI and STM. Publish them as a set, or remove links to pages that aren't live yet.

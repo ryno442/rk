@@ -59,7 +59,7 @@ SITES = {
         name="Pennsylvania Health Agents", domain="pahealthagents.com", state="Pennsylvania", abbr="PA",
         phone="(855) 847-7020", tel="+18558477020",
         mphone="(855) 847-7020", mtel="+18558477020",
-        contact="/contact-us/",
+        contact="/contact/",  # existing PA contact page (ID 19) - keep its slug
         exchange="Pennie", exchange_url="https://pennie.com/",
         oe="November 1, 2026 through January 15, 2027", jan1="December 15, 2026",
         stm=True,
