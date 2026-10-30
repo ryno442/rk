@@ -46,7 +46,7 @@ SITES = {
         name="Florida Health Agents", domain="floridahealthagents.com", state="Florida", abbr="FL",
         phone="(312) 726-6565", tel="+13127266565",
         mphone="(312) 726-6565", mtel="+13127266565",
-        contact="/contact-us/",  # VERIFY slug
+        contact="/contact-us/",
         exchange="HealthCare.gov", exchange_url="https://www.healthcare.gov/",
         oe="November 1, 2026 through January 15, 2027", jan1="December 15, 2026",
         stm=True,
@@ -59,7 +59,7 @@ SITES = {
         name="Pennsylvania Health Agents", domain="pahealthagents.com", state="Pennsylvania", abbr="PA",
         phone="(855) 847-7020", tel="+18558477020",
         mphone="(855) 847-7020", mtel="+18558477020",
-        contact="/contact/",  # VERIFY slug (contact page is ID 19)
+        contact="/contact-us/",
         exchange="Pennie", exchange_url="https://pennie.com/",
         oe="November 1, 2026 through January 15, 2027", jan1="December 15, 2026",
         stm=True,
@@ -72,7 +72,7 @@ SITES = {
         name="California Health Agents", domain="californiahealthagents.com", state="California", abbr="CA",
         phone="(855) 847-7020", tel="+18558477020",
         mphone="(855) 847-7020", mtel="+18558477020",
-        contact="/contact-us/",  # VERIFY slug
+        contact="/contact-us/",
         exchange="Covered California", exchange_url="https://www.coveredca.com/",
         oe="November 1, 2026 through January 31, 2027", jan1="December 31, 2026",
         stm=False,
@@ -85,7 +85,7 @@ SITES = {
         name="Indiana Health Agents", domain="indianahealthagents.com", state="Indiana", abbr="IN",
         phone="(312) 726-6565", tel="+13127266565",
         mphone="(312) 726-6565", mtel="+13127266565",
-        contact="/contact-us/",  # VERIFY slug
+        contact="/contact-us/",
         exchange="HealthCare.gov", exchange_url="https://www.healthcare.gov/",
         oe="November 1, 2026 through January 15, 2027", jan1="December 15, 2026",
         stm=True,
