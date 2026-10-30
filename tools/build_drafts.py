@@ -19,7 +19,7 @@ SITES = {
     "tx": dict(
         name="Texas Health Agents", domain="texashealthagents.com", state="Texas", abbr="TX",
         phone="(972) 666-0578", tel="+19726660578",
-        mphone="(972) 666-0578", mtel="+19726660578",  # VERIFY: TX Medicare line not confirmed
+        mphone="(972) 666-0578 ext. 2", mtel="+19726660578,2",  # comma pause auto-dials ext. 2
         contact="/contact-us/",
         exchange="HealthCare.gov", exchange_url="https://www.healthcare.gov/",
         oe="November 1, 2026 through January 15, 2027", jan1="December 15, 2026",

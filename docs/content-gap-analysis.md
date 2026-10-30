@@ -46,7 +46,7 @@ other states.
 ### Texas (texashealthagents.com)
 - ICHRA page: PA and CA have one, TX doesn't appear to. Draft: `drafts/tx/ichra.html`.
 - STM page: allowed in TX. Draft included.
-- Medicare phone line is still "confirm with Ryan" in the skill. The drafts use the main number until that's confirmed.
+- Medicare line: (972) 666-0578 ext. 2, linked as `tel:+19726660578,2` (the comma pause auto-dials the extension). Confirmed by Ryan 10/30/26. Also update the TX row in the ihealthagents skill.
 
 ### Illinois (ilhealthagents.com)
 - **Illinois Medigap Birthday Rule** page. This is a state-specific ranking opportunity (CA already ranks on its own birthday rule content). Draft: `drafts/il/medicare-supplement-birthday-rule.html`.
