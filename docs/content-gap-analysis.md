@@ -58,7 +58,9 @@ other states.
 - Existing GSC problems (64 404s, 206 crawled-not-indexed, noindex fixed 8/20/26) mean new pages should go out alongside fixes for thin carrier pages. Strong pages on supplemental, AEP and OE topics give Google something worth indexing.
 - STM page (FL law allows up to 36 months total). Draft included.
 - ICHRA page. Draft included.
-- Florida is the largest Medicare market of the five. Next opportunities: a "Medicare Advantage vs Medigap in Florida" page and county pages (Miami-Dade, Broward, Palm Beach, Hillsborough, Orange). Not drafted.
+- **Medicare Advantage vs. Medigap in Florida** (drafted: `drafts/fl/medicare-advantage-vs-medicare-supplement.html`). Florida is the largest Medicare market of the five. The page covers snowbirds, the under-65 disability/ESRD Medigap right (s. 627.6741, has a VERIFY note), the fact that Florida has no birthday rule, and the federal trial right. It links to the existing Medigap page 11416.
+- **Hurricane health insurance guide** (drafted: `drafts/fl/hurricane-health-insurance-guide.html`). This is unique to Florida and searched every season: early prescription refills under s. 252.358 F.S., out-of-network care when evacuating (MA disaster rules), and disaster SEPs for HealthCare.gov (60 days after the FEMA incident period) and Medicare. Re-verify every June, and pin it to the homepage during active storms.
+- County Medicare pages (Miami-Dade, Broward, Palm Beach, Hillsborough, Orange): hold off until the 206 crawled-not-indexed pages are cleaned up. Thin county pages would make that problem worse.
 
 ### Pennsylvania (pahealthagents.com)
 - Group carrier pages exist for Aetna, Cigna, Geisinger, UHC and Capital Blue Cross. **Missing: Highmark, Independence Blue Cross and UPMC Health Plan.** These are three of the largest group carriers in the state. Clone the Geisinger group page using the PA skill method.
@@ -71,7 +73,14 @@ other states.
 - The OE draft uses Covered CA dates (Nov 1 - Jan 31; Dec 31 for Jan 1 start) and includes the CA mandate and HSA non-conformity.
 - Do not add STM. The no-subsidy draft explains that it's banned.
 
-### Sister sites (AZ, CO, IN, OH, WI)
+### Indiana (indianahealthagents.com)
+No skill notes and no site access, so these drafts are built from scratch. **Blocker: the Indiana phone number is unknown.** Every IN draft shows `[INDIANA PHONE]` until `SITES["in"]` in the generator is filled in, and the contact slug needs confirming.
+- **Losing HIP coverage** (drafted: `drafts/in/losing-hip-coverage.html`). This is the biggest Indiana-only opportunity. HIP work requirements start 1/1/2027 (80 hrs/month or $580/month, ages 19-64, 3-month lookback, 6-month redeterminations), and the state estimates 58,000+ could lose coverage. Key point: anyone who loses Medicaid for work-requirement non-compliance is barred from a premium tax credit (OBBBA s.71119), and the 150% FPL low-income SEP is gone.
+- Shared set: OE 2027, no-subsidy, AEP, hospital indemnity, CI/cancer, final expense, ICHRA, and STM. Indiana allows initial terms up to 364 days and up to 36 months total, with a $2M minimum benefit (IC 27-8-5.9).
+- Medicare counseling program in the disclaimer: Indiana SHIP, 1-800-452-4800.
+- Not drafted: Indiana carrier pages (Anthem, CareSource, Ambetter/MHS, UHC, etc.). Confirm which exist first.
+
+### Other sister sites (AZ, CO, OH, WI)
 Not reviewed: there are no skill notes and no site access. The same set of drafts can be generated for
 them by adding entries to `SITES` in the generator (phone, exchange, OE dates, STM legality, SHIP name and number).
 
@@ -92,6 +101,11 @@ them by adding entries to `SITES` in the generator (phone, exchange, OE dates, S
 | STM federal | 2024 rule (3/4 months) on books; non-enforcement statement 8/7/2025 | DOL statement |
 | IL STM | Banned from 1/1/2025 | healthinsurance.org; IL 2024 legislation |
 | FL STM | <12 months initial, up to 36 months total by statute | healthinsurance.org |
+| FL early refills | 30-day refill when a hurricane warning / state of emergency is in place (s. 252.358 F.S.) | FLOIR notices |
+| Disaster SEPs | HealthCare.gov: 60 days after the FEMA incident period; Medicare: FEMA SEP for MA/Part D | CMS guidance |
+| Indiana HIP work requirements | Start 1/1/2027; 80 hrs or $580/month; 3-month lookback | in.gov/fssa/hip; Mirror Indy |
+| PTC bar after work-requirement loss | OBBBA s.71119 | NHeLP / analyses |
+| IN STM | 364-day initial, 36 months total, $2M minimum benefit | healthinsurance.org; IDOI Bulletin 244 |
 | IL Medigap birthday rule | 45 days from birthday, ages 65-75, equal or lesser benefits | P.A. 102-0142; NAIC chart (**same vs any insurer unresolved**) |
 
 **Not confirmed, and deliberately left out:** a reported 2026 rename of ICHRA to "CHOICE Arrangement"

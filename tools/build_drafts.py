@@ -81,6 +81,21 @@ SITES = {
         ship=("HICAP", "1-800-434-0222"),
         regulator="California Department of Insurance",
     ),
+    "in": dict(
+        name="Indiana Health Agents", domain="indianahealthagents.com", state="Indiana", abbr="IN",
+        # BLOCKER: Indiana phone number unknown (no skill notes, site unreachable). Replace both pairs.
+        phone="[INDIANA PHONE]", tel="+1PHONE-VERIFY",
+        mphone="[INDIANA PHONE]", mtel="+1PHONE-VERIFY",
+        contact="/contact-us/",  # VERIFY slug
+        exchange="HealthCare.gov", exchange_url="https://www.healthcare.gov/",
+        oe="November 1, 2026 through January 15, 2027", jan1="December 15, 2026",
+        stm=True,
+        stm_note=("Indiana law allows short-term plans with initial terms up to 364 days and up to 36 months "
+                  "in total, with at least $2 million in benefits, but each carrier sets its own limits and "
+                  "many sell shorter terms."),
+        ship=("SHIP (State Health Insurance Assistance Program)", "1-800-452-4800"),
+        regulator="Indiana Department of Insurance",
+    ),
 }
 
 CSS = """<style>
@@ -689,7 +704,7 @@ with the reimbursement tax-free to both of you.</p>
         meta=(f"An ICHRA lets {s['state']} employers reimburse individual health premiums tax-free at a fixed cost. "
               f"How it works, how it compares to group, and next steps."),
         parent="Under Group / Business insurance",
-        sites="ichra")
+        sites=["tx", "il", "fl", "in"])
 
 
 def page_il_birthday(s):
@@ -746,18 +761,245 @@ so a Plan G covers the same things whichever company issues it.</div>
         meta=("Illinois Medigap policyholders age 65-75 get a 45-day window after their birthday to switch to an "
               "equal or lesser plan with no health questions. How it works."),
         parent="Under Medicare",
-        sites="il")
+        sites=["il"])
+
+
+def page_fl_ma_vs_medigap(s):
+    title = "Medicare Advantage vs. Medicare Supplement in Florida"
+    faqs = [
+        ("Which is better in Florida, Medicare Advantage or a Medicare Supplement?",
+         "It depends on how you use care. Medicare Advantage usually has lower premiums and a network with copays. "
+         "A Medicare Supplement costs more each month but lets you see any provider that accepts Medicare, "
+         "nationwide, with little or nothing out of pocket depending on the plan."),
+        ("Can I switch from Medicare Advantage to a Medigap plan later?",
+         "You can apply at any time, but outside a guaranteed-issue situation the insurer can ask health questions "
+         "and decline you. Florida does not have an annual Medigap birthday rule."),
+        ("I am under 65 and on Medicare because of a disability. Can I get a Medigap plan in Florida?",
+         "Yes. Florida requires Medigap insurers to offer coverage to people under 65 who have Medicare because of "
+         "a disability or end-stage renal disease, with a six-month open enrollment window after enrolling in "
+         "Part B. Premiums for under-65 enrollees are often higher."),
+        ("I split the year between Florida and another state. What should I pick?",
+         "Snowbirds often prefer a Medicare Supplement because it works with any Medicare provider in any state. "
+         "Most Medicare Advantage plans cover only emergency and urgent care outside the service area."),
+    ]
+    body = f"""
+<!-- VERIFY: confirm the under-65 window wording against current s. 627.6741, Florida Statutes. -->
+<p class="iha-lead">Florida has one of the most competitive Medicare Advantage markets in the country, with many
+$0-premium plans in most counties. That makes the Advantage-or-Supplement decision bigger here than almost anywhere.
+Here is how the two compare for Floridians, including snowbirds and people under 65.</p>
+
+<h2>Side by side</h2>
+<table>
+<tr><th></th><th>Medicare Advantage (Part C)</th><th>Medicare Supplement (Medigap)</th></tr>
+<tr><td>Monthly premium</td><td>Often $0 to low, plus your Part B premium</td><td>Higher, plus your Part B premium and a separate Part D plan</td></tr>
+<tr><td>Doctors and hospitals</td><td>Plan network (HMO or PPO)</td><td>Any provider in the U.S. that accepts Medicare</td></tr>
+<tr><td>Costs when you use care</td><td>Copays and coinsurance up to the plan's yearly maximum</td><td>Little to none, depending on the plan letter</td></tr>
+<tr><td>Referrals</td><td>Often required on HMOs</td><td>Not required</td></tr>
+<tr><td>Extras</td><td>Often dental, vision, hearing, and over-the-counter allowances</td><td>Not included; add a separate dental or vision policy</td></tr>
+<tr><td>Travel outside Florida</td><td>Usually emergency and urgent care only</td><td>Works nationwide</td></tr>
+<tr><td>Switching later</td><td>During annual enrollment each fall</td><td>Health questions may apply after your first open enrollment</td></tr>
+</table>
+
+<h2>Florida rules worth knowing</h2>
+<ul>
+<li><strong>Your first Medigap window matters most.</strong> In the six months after you are 65 and enrolled in Part B,
+Medigap insurers must accept you without health questions. After that, they generally can ask them.</li>
+<li><strong>Under 65 on Medicare?</strong> Florida requires Medigap insurers to offer coverage to people under 65 with
+Medicare because of a disability or end-stage renal disease, with a six-month open enrollment after Part B starts.</li>
+<li><strong>No annual birthday rule.</strong> Some states let you change Medigap plans each year without health
+questions. Florida does not, so choose carefully the first time.</li>
+<li><strong>Trial right.</strong> If you join Medicare Advantage when you first become eligible, or drop a Medigap plan to
+try Advantage for the first time, federal rules generally let you go back to a Medigap plan within 12 months without
+health questions.</li>
+</ul>
+
+<h2>Who usually picks which</h2>
+<h3>Medicare Advantage tends to fit</h3>
+<ul>
+<li>Year-round Florida residents happy with a local network</li>
+<li>People who want the lowest premium and value dental, vision, and hearing extras</li>
+<li>People in good health who rarely see specialists</li>
+</ul>
+<h3>A Medicare Supplement tends to fit</h3>
+<ul>
+<li>Snowbirds and frequent travelers</li>
+<li>People who want specific specialists or cancer centers without network limits</li>
+<li>Anyone who wants predictable costs and can afford the higher premium</li>
+</ul>
+<p>Compare Supplement plans on our <a href="/insurance-applications/medicare-supplement-plans/">Florida Medicare
+Supplement page</a>, or see what changes this fall in our <a href="/medicare-annual-enrollment/">annual enrollment
+guide</a>.</p>
+{cta(s, "Get a side-by-side for your ZIP code", "We compare Advantage plans and Supplement premiums from the carriers we offer in your county.", quote_url=SUNFIRE, quote_label="Compare Plans Online", medicare=True)}
+{faq_html(faqs)}
+{medicare_fine(s)}
+"""
+    return dict(
+        slug="medicare-advantage-vs-medicare-supplement", title=title, faqs=faqs, body=body,
+        seo=f"Medicare Advantage vs Medigap in Florida ({YEAR})",
+        meta=("Medicare Advantage or a Medicare Supplement in Florida? Compare costs, networks and travel coverage, "
+              "plus Florida rules for snowbirds and under-65 enrollees."),
+        parent="Under Medicare (sibling of the Medicare Supplement page 11416)",
+        sites=["fl"])
+
+
+def page_fl_hurricane(s):
+    title = "Hurricanes and Your Health Insurance in Florida"
+    faqs = [
+        ("Can I get my prescriptions refilled early before a hurricane?",
+         "Yes. Florida law requires health insurers and HMOs to waive refill-too-soon limits and pay for at least a "
+         "30-day supply when your county is under a hurricane warning, a state of emergency, or an activated "
+         "emergency operations center. Ask your pharmacy as soon as the warning is issued."),
+        ("A storm made me miss open enrollment. Can I still enroll?",
+         "Possibly. If you live in a FEMA-declared disaster area and the storm kept you from enrolling, you can ask "
+         "HealthCare.gov for a special enrollment period, generally available for 60 days after the FEMA incident "
+         "period ends. Call 1-800-318-2596."),
+        ("Does Medicare have a special enrollment period after a hurricane?",
+         "Yes, in some cases. If a FEMA-declared emergency kept you from making a Medicare Advantage or Part D "
+         "change you were eligible to make, you may qualify for a disaster special enrollment period."),
+        ("What if I have to evacuate and see an out-of-network doctor?",
+         "During a declared disaster, Medicare Advantage plans must let you get covered care at non-contracted "
+         "providers at in-network cost sharing. Many other insurers relax network and referral rules too. Call the "
+         "number on your ID card and keep receipts."),
+    ]
+    body = f"""
+<!-- VERIFY each June before hurricane season: s. 252.358 F.S. wording, HealthCare.gov disaster SEP length,
+and the CMS disaster SEP rules. Consider pinning this page to the homepage during active storms. -->
+<p class="iha-lead">Every hurricane season raises the same questions from our Florida clients: can I refill my
+medications early, what if I evacuate out of my network, and what if a storm made me miss a deadline? Here are the
+answers, before you need them.</p>
+
+<h2>Before the storm</h2>
+<ul>
+<li><strong>Refill prescriptions early.</strong> When your county is under a hurricane warning or a state of emergency,
+Florida law requires insurers to cover at least a 30-day refill even if it is too soon. Request it within 30 days of
+the declaration.</li>
+<li><strong>Photograph your ID cards</strong> (medical, dental, Medicare, Part D) and save your carrier's phone number
+and app login on your phone.</li>
+<li><strong>Write down</strong> your medications, doses, and prescribing doctors.</li>
+<li><strong>Keep a list of providers</strong> where you might evacuate. If you have a PPO or a Medicare Supplement, check
+which ones accept your plan.</li>
+</ul>
+
+<h2>If you evacuate</h2>
+<ul>
+<li><strong>Medicare Advantage:</strong> during a declared disaster, plans must cover care from non-contracted providers
+at in-network cost sharing and waive referral requirements while the emergency lasts.</li>
+<li><strong>Medicare Supplement:</strong> works with any Medicare provider in the country, wherever you are.</li>
+<li><strong>ACA and employer plans:</strong> emergency care is covered out of network. For non-emergency care, call your
+carrier first, since many relax network rules after a declaration.</li>
+<li>Keep every receipt. Out-of-network claims are easier with documentation.</li>
+</ul>
+
+<h2>If a storm made you miss a deadline</h2>
+<table>
+<tr><th>Coverage</th><th>What may be available</th><th>How to ask</th></tr>
+<tr><td>Marketplace (ACA) plans</td><td>A special enrollment period if a FEMA-declared disaster kept you from enrolling, generally for 60 days after the incident period ends</td><td>HealthCare.gov, 1-800-318-2596, or call us</td></tr>
+<tr><td>Medicare Advantage and Part D</td><td>A disaster special enrollment period if the emergency kept you from making a change you were eligible to make</td><td>1-800-MEDICARE, or call us</td></tr>
+<tr><td>Losing job-based coverage after a storm</td><td>The usual 60-day loss-of-coverage special enrollment period</td><td>Call us right away</td></tr>
+</table>
+<div class="iha-box">You will usually be asked to confirm that you lived in an affected county. Check whether your
+county is included at fema.gov/disaster.</div>
+
+<h2>After the storm</h2>
+<ul>
+<li>Check whether your doctors and pharmacy are open; your carrier's app often shows temporary locations</li>
+<li>Ask about telehealth, which most plans cover</li>
+<li>If your income or address changed, update your marketplace application so your subsidy stays accurate</li>
+</ul>
+{cta(s, "Questions after a storm? Call us", "We help clients replace ID cards, file out-of-network claims, and use disaster enrollment periods.")}
+{faq_html(faqs)}
+{agency_fine(s)}
+"""
+    return dict(
+        slug="hurricane-health-insurance-guide", title=title, faqs=faqs, body=body,
+        seo="Hurricane Health Insurance Guide for Florida",
+        meta=("Florida hurricane guide for health insurance: early prescription refills, evacuating out of network, "
+              "and disaster enrollment periods for ACA and Medicare."),
+        parent="Top level or under Resources / FAQ",
+        sites=["fl"])
+
+
+def page_in_hip(s):
+    title = f"Losing HIP Coverage in {YEAR}? Your Options in Indiana"
+    faqs = [
+        ("When do the HIP work requirements start?",
+         f"January 1, {YEAR}. They apply to Healthy Indiana Plan members age 19 to 64 who are not pregnant and not "
+         "eligible for Medicare, unless an exemption applies."),
+        ("What do I have to do to keep HIP?",
+         "Show 80 hours a month of work, job training, volunteering, or school, or earn at least $580 a month, or "
+         "qualify for an exemption. Indiana looks back three months, so October through December 2026 counts for "
+         "January applications."),
+        ("If I lose HIP, can I get a subsidized marketplace plan?",
+         "It depends on why. Under federal law, people who lose Medicaid for not meeting work requirements cannot get "
+         "a premium tax credit. If you lose HIP for another reason, such as higher income, you may qualify for a "
+         "special enrollment period and a subsidy."),
+        ("Is there still a year-round enrollment option for low-income people?",
+         "No. The special enrollment period for people under 150% of the poverty level has ended, so timing matters. "
+         "Losing coverage generally gives you 60 days to enroll in a marketplace plan."),
+    ]
+    body = f"""
+<!-- Facts as of Oct 2026 (FSSA, Mirror Indy). Re-check FSSA guidance before publishing and each quarter. -->
+<p class="iha-lead">Starting January 1, {YEAR}, most Healthy Indiana Plan (HIP) members must meet new work and activity
+requirements, and eligibility will be checked every six months instead of once a year. The state estimates more than
+58,000 Hoosiers could lose HIP coverage in {YEAR}. If you or someone in your family is on HIP, here is what to know now.</p>
+
+<div class="iha-box iha-warn"><strong>The most important thing first:</strong> if you lose HIP <em>because you did not meet
+or report the work requirement</em>, federal law bars you from a marketplace premium tax credit. Keeping HIP, or
+claiming an exemption you qualify for, is almost always cheaper than any private plan. Report your hours through the
+state before you think about anything else.</div>
+
+<h2>The new HIP rules</h2>
+<ul>
+<li><strong>Who:</strong> HIP members age 19 to 64 who are not pregnant and not eligible for Medicare</li>
+<li><strong>What:</strong> 80 hours a month of work, job training, volunteering, or school, or earnings of at least $580 a month</li>
+<li><strong>Lookback:</strong> three months, so October through December 2026 counts for January {YEAR} applications</li>
+<li><strong>Checks:</strong> eligibility every six months; hours checked more often</li>
+<li><strong>Exemptions</strong> apply for some caregivers, people with certain health conditions, and others. See the
+<a href="https://www.in.gov/fssa/hip/hip-work-requirements/info-for-hip-members" target="_blank" rel="noopener">FSSA HIP page</a>.</li>
+</ul>
+
+<h2>If you lose HIP anyway</h2>
+<h3>Lost HIP because your income went up</h3>
+<p>Losing Medicaid is a qualifying event. You generally have 60 days to enroll in a {s['exchange']} plan, and you may
+qualify for a premium tax credit. We can tell you within minutes.</p>
+<h3>Lost HIP for not meeting work requirements</h3>
+<p>You can still buy a marketplace plan during open enrollment ({s['oe']}) or after a qualifying event, but without a
+premium tax credit. Lower-cost options include Bronze plans, short-term coverage where it fits, and job-based coverage
+if your employer offers it.</p>
+<h3>Got a job with benefits?</h3>
+<p>Compare the employer plan to what you would pay on your own. If the employer offers an ICHRA, see our
+<a href="/ichra/">ICHRA guide</a>.</p>
+
+<h2>Short-term coverage in Indiana</h2>
+<p>{s['stm_note']} Short-term plans are not ACA coverage and usually exclude pre-existing conditions.
+<a href="/short-term-health-insurance/">Learn more</a>.</p>
+{cta(s, "Losing HIP? Talk to us first", "We will check whether you can keep HIP, qualify for a subsidy, or need a lower-cost private plan.")}
+{faq_html(faqs)}
+<p class="iha-fine">{s['name']} is not affiliated with the Indiana Family and Social Services Administration (FSSA) or the
+Healthy Indiana Plan. For HIP eligibility decisions, contact FSSA. We help with private and marketplace coverage.</p>
+{agency_fine(s)}
+"""
+    return dict(
+        slug="losing-hip-coverage", title=title, faqs=faqs, body=body,
+        seo=f"Losing HIP Coverage in {YEAR}? Indiana Options",
+        meta=(f"HIP work requirements start Jan 1, {YEAR}. What Indiana members must do to keep coverage, and "
+              f"options if you lose it: marketplace plans, subsidies and more."),
+        parent="Under Individual / Health Insurance",
+        sites=["in"])
 
 
 PAGES = [page_open_enrollment, page_no_subsidy, page_aep, page_hospital, page_ci,
-         page_final_expense, page_stm, page_ichra, page_il_birthday]
+         page_final_expense, page_stm, page_ichra, page_il_birthday,
+         page_fl_ma_vs_medigap, page_fl_hurricane, page_in_hip]
 
 
 def wanted(page, key):
     scope = page["sites"]
-    s = SITES[key]
-    return (scope == "all" or (scope == "stm" and s["stm"]) or
-            (scope == "ichra" and key in ("tx", "il", "fl")) or scope == key)
+    if scope == "all":
+        return True
+    if scope == "stm":
+        return SITES[key]["stm"]
+    return key in scope
 
 
 BAD_DASH = re.compile("[\u2013\u2014]")
@@ -772,7 +1014,9 @@ def build():
             p = fn(s)
             if not wanted(p, key):
                 continue
-            header = (f"<!--\nDRAFT for {s['domain']} - not published\n"
+            blocker = ("BLOCKER: phone number is a placeholder - fill in SITES before publishing\n"
+                       if "VERIFY" in s["tel"] else "")
+            header = (f"<!--\nDRAFT for {s['domain']} - not published\n{blocker}"
                       f"WP page title (renders as H1): {p['title']}\n"
                       f"Slug: /{p['slug']}/\nSuggested parent: {p['parent']}\n"
                       f"SEO title ({len(p['seo'])} chars): {p['seo']}\n"
@@ -782,6 +1026,7 @@ def build():
                    jsonld(s, p["title"], p["slug"], p["faqs"]) + "\n")
             assert not BAD_DASH.search(out), f"em/en dash in {key}/{p['slug']}"
             assert "<h1" not in out
+            assert len(p["meta"]) <= 160 and len(p["seo"]) <= 60, f"meta/seo too long: {key}/{p['slug']}"
             with open(os.path.join(root, key, p["slug"] + ".html"), "w") as f:
                 f.write(out)
             index.append((s["domain"], p["slug"], p["title"], len(p["seo"]), len(p["meta"])))
