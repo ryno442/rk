@@ -50,7 +50,7 @@ other states.
 
 ### Illinois (ilhealthagents.com)
 - **Illinois Medigap Birthday Rule** page. This is a state-specific ranking opportunity (CA already ranks on its own birthday rule content). Draft: `drafts/il/medicare-supplement-birthday-rule.html`.
-  **Has a VERIFY block.** Sources disagree on whether the switch must stay with the current insurer. Check 215 ILCS 5/363 and fix the marked paragraph before publishing.
+  The switch must be to a policy from the current insurer or an affiliated company (confirmed by Ryan 10/30/26), so the page explains insurer-family moves and the health questions for moving to an unrelated company.
 - Get Covered Illinois (Illinois's own marketplace since PY2026) explainer: the OE page covers dates. A standalone "Get Covered Illinois vs. HealthCare.gov" page is a further opportunity.
 - ICHRA page. Draft included.
 
@@ -106,7 +106,7 @@ them by adding entries to `SITES` in the generator (phone, exchange, OE dates, S
 | Indiana HIP work requirements | Start 1/1/2027; 80 hrs or $580/month; 3-month lookback | in.gov/fssa/hip; Mirror Indy |
 | PTC bar after work-requirement loss | OBBBA s.71119 | NHeLP / analyses |
 | IN STM | 364-day initial, 36 months total, $2M minimum benefit | healthinsurance.org; IDOI Bulletin 244 |
-| IL Medigap birthday rule | 45 days from birthday, ages 65-75, equal or lesser benefits | P.A. 102-0142; NAIC chart (**same vs any insurer unresolved**) |
+| IL Medigap birthday rule | 45 days from birthday, ages 65-75, equal or lesser benefits, current insurer or an affiliate | P.A. 102-0142; NAIC chart. Same insurer or an affiliate (confirmed by Ryan) |
 
 **Not confirmed, and deliberately left out:** a reported 2026 rename of ICHRA to "CHOICE Arrangement"
 (only one source), and 2027 Part B premium and deductibles (CMS usually announces these in mid-November).
