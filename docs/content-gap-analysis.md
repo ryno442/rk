@@ -98,6 +98,7 @@ them by adding entries to `SITES` in the generator (phone, exchange, OE dates, S
 | 2027 ACA max OOP | $12,000 / $24,000 | CMS guidance 1/29/2026 via Baldwin, Hylant |
 | 2027 HSA | $4,500 / $9,000; HDHP min deductible $1,750 / $3,500 | Rev. Proc. 2026-24 |
 | 2027 Part D | OOP cap $2,400; deductible $700 | CMS CY2027 Rate Announcement (4/6/2026) |
+| 2027 Part A / Part B | Part B $209.40/month, $292 deductible; Part A $1,776 deductible, $444/day (days 61-90), $888/day (lifetime reserve), SNF $222/day (days 21-100) | CMS fact sheet, Nov 17, 2026 |
 | AEP / MA OEP | Oct 15 - Dec 7; Jan 1 - Mar 31 | CMS |
 | STM federal | 2024 rule (3/4 months) on books; non-enforcement statement 8/7/2025 | DOL statement |
 | IL STM | Banned from 1/1/2025 | healthinsurance.org; IL 2024 legislation |
@@ -110,8 +111,7 @@ them by adding entries to `SITES` in the generator (phone, exchange, OE dates, S
 | IL Medigap birthday rule | 45 days from birthday, ages 65-75, equal or lesser benefits, current insurer or an affiliate | P.A. 102-0142; NAIC chart. Same insurer or an affiliate (confirmed by Ryan) |
 
 **Not confirmed, and deliberately left out:** a reported 2026 rename of ICHRA to "CHOICE Arrangement"
-(only one source), and 2027 Part B premium and deductibles (CMS usually announces these in mid-November).
-The AEP draft has an `ANNUAL UPDATE` placeholder for them.
+(only one source), 
 
 ## 5. Publishing checklist (per page)
 

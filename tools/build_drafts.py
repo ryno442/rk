@@ -568,8 +568,11 @@ networks, and doctor networks. Here is what to check before December 7.</p>
 <ul>
 <li><strong>Part D out-of-pocket cap rises to $2,400</strong> (from $2,100 in 2026). <!-- ANNUAL UPDATE --></li>
 <li><strong>Maximum Part D deductible rises to $700</strong> (from $615). <!-- ANNUAL UPDATE --></li>
-<li><strong>Part B premium and deductibles for {YEAR}</strong> are usually announced by CMS in the fall. We will
-update this page when they are published. <!-- ANNUAL UPDATE: add Part B premium, Part A and B deductibles --></li>
+<li><strong>Part B standard premium rises to $209.40 a month</strong> (from $202.90), and the <strong>Part B deductible
+to $292</strong> (from $283). Higher earners pay more. <!-- ANNUAL UPDATE --></li>
+<li><strong>Part A hospital deductible rises to $1,776</strong> per benefit period (from $1,736). Hospital coinsurance is
+$444 a day for days 61-90 and $888 a day for lifetime reserve days; skilled nursing coinsurance is $222 a day for days
+21-100. <!-- ANNUAL UPDATE --></li>
 <li>Check your plan's Annual Notice of Change for network, drug list and copay changes.</li>
 </ul>
 
