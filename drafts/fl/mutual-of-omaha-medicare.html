@@ -1,0 +1,65 @@
+<!--
+DRAFT for floridahealthagents.com - not published
+Replaces the body of page ID 12741 (Mutual of Omaha Medicare, enrollment page)
+WP page title: Mutual of Omaha Medicare Enrollment in Florida
+Slug: /mutual-of-omaha-medicare/  (do not change)
+SEO title: Mutual of Omaha Medicare in Florida | How to Enroll
+Meta description: How to enroll in Mutual of Omaha Medicare Supplement in Florida: when you can enroll, what you need, and how to search rates by ZIP code with a licensed agent.
+Changes vs live: separate ancillary-product application URL and its cards removed, every quote link goes to the
+Mutual of Omaha agent page (no SunFire), ZIP rate search added, "24/7 Nurse Support Line" claim removed (unverified),
+plan list made consistent (A, F, G, N - CONFIRM with the carrier), page repositioned around enrollment so it no longer
+duplicates /mutual-of-omaha/ (which targets plans and rates), AEP dates left as the live page had them, FAQ + FAQPage schema added.
+-->
+<style>
+.iha-gp{max-width:1000px;margin:0 auto;font-size:17px;line-height:1.65;color:#1f2a37}
+.iha-gp h2{font-size:28px;line-height:1.25;margin:36px 0 12px;color:#0a2a4e}
+.iha-gp h3{font-size:20px;margin:24px 0 8px;color:#0a2a4e}
+.iha-gp p{margin:0 0 14px}
+.iha-gp ul{margin:0 0 16px 22px;padding:0}
+.iha-gp li{margin:0 0 6px}
+.iha-gp .iha-lead{font-size:19px}
+.iha-gp .iha-box{background:#f3f7fb;border-left:4px solid #1565c0;padding:16px 20px;margin:20px 0;border-radius:4px}
+.iha-gp table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:16px}
+.iha-gp th,.iha-gp td{border:1px solid #d6dee8;padding:10px 12px;text-align:left;vertical-align:top}
+.iha-gp th{background:#0a2a4e;color:#fff}
+.iha-gp details{border:1px solid #d6dee8;border-radius:6px;margin:0 0 10px;padding:12px 16px;background:#fff}
+.iha-gp summary{font-weight:700;cursor:pointer;color:#0a2a4e}
+.iha-gp details p{margin:10px 0 0}
+.iha-gp .iha-zip{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 6px}
+.iha-gp .iha-zip input{padding:12px 14px;font-size:17px;border:1px solid #b8c4d2;border-radius:6px;width:180px}
+.iha-gp .iha-zip .iha-err{width:100%;color:#b00020;font-size:14px;margin:0;min-height:18px}
+.iha-gp .iha-cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0;padding:24px;background:#0a2a4e;border-radius:8px}
+.iha-gp .iha-cta h2{color:#fff;margin:0 0 4px;width:100%;font-size:24px}
+.iha-gp .iha-cta p{color:#dbe6f3;width:100%;margin:0 0 8px}
+.iha-gp .iha-btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:700;text-decoration:none;background:#fff;color:#0a2a4e;border:0;cursor:pointer;font-size:17px}
+.iha-gp .iha-btn.iha-alt{background:#f5a623;color:#1f2a37}
+.iha-gp .iha-fine{font-size:13px;color:#5b6775;line-height:1.5;margin-top:24px}
+@media(max-width:600px){.iha-gp{font-size:16px}.iha-gp h2{font-size:23px}.iha-gp .iha-btn,.iha-gp .iha-zip input{width:100%;text-align:center}}
+</style>
+<div class="iha-gp">
+<h1>Mutual of Omaha Medicare Enrollment in Florida</h1>
+<p class="iha-lead">Mutual of Omaha is one of the best-known Medicare Supplement (Medigap) carriers in the country. Here is when you can enroll in Florida and what to have ready. Prefer to see plans and pricing first? Start with our <a href="/mutual-of-omaha/">Mutual of Omaha plans and rates page</a>.</p>
+<div class="iha-box"><h3 style="margin-top:0">See Mutual of Omaha Medicare rates in your ZIP code</h3><div class="iha-zip"><input id="mooMdZip" type="text" inputmode="numeric" maxlength="5" placeholder="ZIP code" aria-label="Florida ZIP code" onkeydown="if(event.key==='Enter'){var z=document.getElementById('mooMdZip').value.trim();if(z.length!==5||isNaN(z)){document.getElementById('mooMdErr').textContent='Please enter a valid 5-digit ZIP code.';return false}document.getElementById('mooMdErr').textContent='';window.open('https://applyformedsupp.com/?npn=8478911&zip='+z,'_blank','noopener');return false}"><button type="button" class="iha-btn iha-alt" onclick="var z=document.getElementById('mooMdZip').value.trim();if(z.length!==5||isNaN(z)){document.getElementById('mooMdErr').textContent='Please enter a valid 5-digit ZIP code.';return false}document.getElementById('mooMdErr').textContent='';window.open('https://applyformedsupp.com/?npn=8478911&zip='+z,'_blank','noopener');return false">See my rates</button><p class="iha-err" id="mooMdErr" role="status" aria-live="polite"></p></div><p style="margin:0">Opens Mutual of Omaha&rsquo;s rate tool. No contact details needed. Or call <a href="tel:+18558477020">(855) 847-7020</a>, Mon-Fri 8:30am-5pm ET.</p></div>
+<h2>What Mutual of Omaha Medicare offers in Florida</h2>
+<p>Mutual of Omaha&rsquo;s Medicare product in Florida is Medicare Supplement insurance, offered as Plans A, F, G and N. It fills the deductibles, copays and coinsurance that Original Medicare leaves you with.</p>
+<ul><li>Use any doctor or hospital in the U.S. that accepts Medicare</li><li>No networks or referrals</li><li>Guaranteed renewable for as long as you pay your premium</li><li>Coverage travels with you anywhere in the U.S.</li><li>Plan F is closed if you became eligible for Medicare after 2019</li></ul>
+<h2>When can you enroll?</h2>
+<table><tr><th>Period</th><th>When</th><th>What it means</th></tr><tr><td>Medigap Open Enrollment</td><td>6 months starting the month you are 65+ and enrolled in Part B</td><td>Best time to buy: no health questions, and you cannot be charged more for your health</td></tr><tr><td>Initial Enrollment Period</td><td>7 months around your 65th birthday</td><td>When you first sign up for Medicare Parts A and B</td></tr><tr><td>Annual Enrollment Period</td><td>October 15 - December 7</td><td>Switch or join a Medicare Advantage or Part D plan for the next year</td></tr><tr><td>Medicare Advantage Open Enrollment</td><td>January 1 - March 31</td><td>Switch Medicare Advantage plans once, or return to Original Medicare</td></tr><tr><td>Special Enrollment Period</td><td>Varies</td><td>After a qualifying life event, such as losing employer coverage</td></tr></table>
+<p>Medigap can be bought at other times of year too, but you may need to answer health questions. See the <a href="/medicare-annual-enrollment/">Medicare annual enrollment guide</a> for the full picture.</p>
+<h2>What to have ready</h2>
+<ul><li>Your red, white and blue Medicare card (Medicare number and Part A and B start dates)</li><li>Your date of birth and tobacco status</li><li>Your Florida ZIP code</li></ul>
+<h2>Medigap or Medicare Advantage?</h2>
+<p>You cannot have both. Medigap adds to Original Medicare and keeps your doctor choice wide open. Medicare Advantage replaces it and usually uses a network. Our <a href="/medicare-advantage-vs-medicare-supplement/">side-by-side guide</a> walks through the trade-offs.</p>
+<h2>Compare other Florida Medicare Supplement carriers</h2>
+<p><a href="/humana-medicare/">Humana</a> | <a href="/aetna-medicare/">Aetna</a> | <a href="/cigna-medicare-supplement/">Cigna</a> | <a href="/unitedhealthcare-medicare/">UnitedHealthcare</a> | <a href="/florida-blue-medicare/">Florida Blue</a> | <a href="/insurance-carriers/">All Florida carriers</a></p>
+<div class="iha-cta"><h2>Get your Mutual of Omaha Medicare quote</h2><p>Free, no obligation. Our licensed Florida agents will help you find the right plan.</p><a class="iha-btn iha-alt" href="https://applyformedsupp.com/?npn=8478911" rel="nofollow">Get My Mutual of Omaha Quote</a><a class="iha-btn" href="tel:+18558477020">Call (855) 847-7020</a><a class="iha-btn" href="/appointment/">Have an Agent Call Me</a></div>
+<h2>Frequently asked questions</h2>
+<details><summary>When can I enroll in Mutual of Omaha Medicare Supplement?</summary><p>Your best window is the 6-month Medigap Open Enrollment Period that starts the month you are 65 or older and enrolled in Part B. During it you cannot be turned down or charged more for health reasons. After it, Mutual of Omaha may ask health questions.</p></details>
+<details><summary>Is Mutual of Omaha a Medicare Advantage plan?</summary><p>No. The plans on this page are Medicare Supplement (Medigap) plans. They work alongside Original Medicare. You cannot use a Medigap plan together with a Medicare Advantage plan.</p></details>
+<details><summary>Do I still need Part A and Part B?</summary><p>Yes. You must be enrolled in both Medicare Part A and Part B to buy a Medicare Supplement plan, and you keep paying your Part B premium.</p></details>
+<details><summary>Can I switch to Mutual of Omaha later?</summary><p>Yes, but outside your open enrollment window you may have to answer health questions, and Florida does not guarantee acceptance for most people. Some situations carry guaranteed-issue rights. An agent can check yours.</p></details>
+<details><summary>How do I get a Mutual of Omaha quote?</summary><p>Use the ZIP code search on this page, or call (855) 847-7020. Quotes are free and carry no obligation.</p></details>
+<p class="iha-fine">Florida Health Agents is a licensed independent insurance agency (NPN 14924332). We are not affiliated with or endorsed by the U.S. government or the federal Medicare program. Medicare Supplement plans are standardized by law; premiums, rating method and availability vary by carrier, age, ZIP code and tobacco status. Agents are paid by carriers, not by you. Confirm plan details with Mutual of Omaha before you enroll.</p>
+<p><a href="/mutual-of-omaha/">&larr; Back to the Mutual of Omaha overview</a></p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When can I enroll in Mutual of Omaha Medicare Supplement?", "acceptedAnswer": {"@type": "Answer", "text": "Your best window is the 6-month Medigap Open Enrollment Period that starts the month you are 65 or older and enrolled in Part B. During it you cannot be turned down or charged more for health reasons. After it, Mutual of Omaha may ask health questions."}}, {"@type": "Question", "name": "Is Mutual of Omaha a Medicare Advantage plan?", "acceptedAnswer": {"@type": "Answer", "text": "No. The plans on this page are Medicare Supplement (Medigap) plans. They work alongside Original Medicare. You cannot use a Medigap plan together with a Medicare Advantage plan."}}, {"@type": "Question", "name": "Do I still need Part A and Part B?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You must be enrolled in both Medicare Part A and Part B to buy a Medicare Supplement plan, and you keep paying your Part B premium."}}, {"@type": "Question", "name": "Can I switch to Mutual of Omaha later?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but outside your open enrollment window you may have to answer health questions, and Florida does not guarantee acceptance for most people. Some situations carry guaranteed-issue rights. An agent can check yours."}}, {"@type": "Question", "name": "How do I get a Mutual of Omaha quote?", "acceptedAnswer": {"@type": "Answer", "text": "Use the ZIP code search on this page, or call (855) 847-7020. Quotes are free and carry no obligation."}}]}</script>
