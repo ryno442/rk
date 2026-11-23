@@ -15,12 +15,10 @@ It appears on all 86 pages in the sitemap, in two places:
 ## New targets (all verified HTTP 200 on 2026-11-23)
 | Label | Old URL | New URL |
 |---|---|---|
-| Dental Insurance | `https://ihealthagents.com/?banner=dental-vision` | `/senior-dental-plans/` |
+| Dental Insurance | `https://ihealthagents.com/?banner=dental-vision` | `/insurance-types/dental-insurance/` |
 | Vision Insurance | `https://ihealthagents.com/?banner=dental-vision` | `/vsp-vision/` |
 
-Note: the menu already has a "Senior Dental Plans (65+)" item pointing to `/senior-dental-plans/`.
-If you do not want two items to the same page, point "Dental Insurance" at
-`/insurance-types/dental-insurance/` (also 200, all ages) instead.
+The all-ages page is used for Dental Insurance because the menu already has a separate "Senior Dental Plans (65+)" item pointing to `/senior-dental-plans/`.
 
 ## Steps
 1. Menu: change the two custom links' URLs. Use site-relative paths or full `https://floridahealthagents.com/...` URLs.
