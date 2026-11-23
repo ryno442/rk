@@ -1,0 +1,64 @@
+<!--
+DRAFT for floridahealthagents.com - not published
+Replaces the body of page ID 12476 (Mutual of Omaha, carrier overview)
+WP page title (H1 is in the body, keep the WP title as-is): Mutual of Omaha Medicare Supplement in Florida
+Slug: /mutual-of-omaha/  (do not change)
+SEO title: Mutual of Omaha Medicare Supplement Florida | 2027 Rates
+Meta description: Compare Mutual of Omaha Medicare Supplement plans in Florida. Search rates by ZIP code, see how attained-age pricing works, and get a free agent quote.
+Changes vs live: all quote links go to the Mutual of Omaha agent page (no SunFire), no ancillary-product links or cards,
+one consistent plan list (A, F, G, N - CONFIRM with the carrier), "Rates Held for Life" claim removed (Medigap premiums
+are not locked), unverifiable "usually the lowest rates" wording softened, sidebar trimmed to Medicare-only, FAQ + FAQPage schema added.
+-->
+<style>
+.iha-gp{max-width:1000px;margin:0 auto;font-size:17px;line-height:1.65;color:#1f2a37}
+.iha-gp h2{font-size:28px;line-height:1.25;margin:36px 0 12px;color:#0a2a4e}
+.iha-gp h3{font-size:20px;margin:24px 0 8px;color:#0a2a4e}
+.iha-gp p{margin:0 0 14px}
+.iha-gp ul{margin:0 0 16px 22px;padding:0}
+.iha-gp li{margin:0 0 6px}
+.iha-gp .iha-lead{font-size:19px}
+.iha-gp .iha-box{background:#f3f7fb;border-left:4px solid #1565c0;padding:16px 20px;margin:20px 0;border-radius:4px}
+.iha-gp table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:16px}
+.iha-gp th,.iha-gp td{border:1px solid #d6dee8;padding:10px 12px;text-align:left;vertical-align:top}
+.iha-gp th{background:#0a2a4e;color:#fff}
+.iha-gp details{border:1px solid #d6dee8;border-radius:6px;margin:0 0 10px;padding:12px 16px;background:#fff}
+.iha-gp summary{font-weight:700;cursor:pointer;color:#0a2a4e}
+.iha-gp details p{margin:10px 0 0}
+.iha-gp .iha-zip{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 6px}
+.iha-gp .iha-zip input{padding:12px 14px;font-size:17px;border:1px solid #b8c4d2;border-radius:6px;width:180px}
+.iha-gp .iha-zip .iha-err{width:100%;color:#b00020;font-size:14px;margin:0;min-height:18px}
+.iha-gp .iha-cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0;padding:24px;background:#0a2a4e;border-radius:8px}
+.iha-gp .iha-cta h2{color:#fff;margin:0 0 4px;width:100%;font-size:24px}
+.iha-gp .iha-cta p{color:#dbe6f3;width:100%;margin:0 0 8px}
+.iha-gp .iha-btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:700;text-decoration:none;background:#fff;color:#0a2a4e;border:0;cursor:pointer;font-size:17px}
+.iha-gp .iha-btn.iha-alt{background:#f5a623;color:#1f2a37}
+.iha-gp .iha-fine{font-size:13px;color:#5b6775;line-height:1.5;margin-top:24px}
+@media(max-width:600px){.iha-gp{font-size:16px}.iha-gp h2{font-size:23px}.iha-gp .iha-btn,.iha-gp .iha-zip input{width:100%;text-align:center}}
+</style>
+<div class="iha-gp">
+<h1>Mutual of Omaha Medicare Supplement in Florida</h1>
+<p class="iha-lead">Mutual of Omaha has sold Medicare Supplement (Medigap) insurance since 1909 and is still policyholder-owned. Search rates for your ZIP code below, or have a licensed Florida agent compare it with the other carriers for you.</p>
+<div class="iha-box"><h3 style="margin-top:0">Search Mutual of Omaha rates by ZIP code</h3><div class="iha-zip"><input id="mooOvZip" type="text" inputmode="numeric" maxlength="5" placeholder="ZIP code" aria-label="Florida ZIP code" onkeydown="if(event.key==='Enter'){var z=document.getElementById('mooOvZip').value.trim();if(z.length!==5||isNaN(z)){document.getElementById('mooOvErr').textContent='Please enter a valid 5-digit ZIP code.';return false}document.getElementById('mooOvErr').textContent='';window.open('https://applyformedsupp.com/?npn=8478911&zip='+z,'_blank','noopener');return false}"><button type="button" class="iha-btn iha-alt" onclick="var z=document.getElementById('mooOvZip').value.trim();if(z.length!==5||isNaN(z)){document.getElementById('mooOvErr').textContent='Please enter a valid 5-digit ZIP code.';return false}document.getElementById('mooOvErr').textContent='';window.open('https://applyformedsupp.com/?npn=8478911&zip='+z,'_blank','noopener');return false">See my rates</button><p class="iha-err" id="mooOvErr" role="status" aria-live="polite"></p></div><p style="margin:0">Opens Mutual of Omaha&rsquo;s rate tool. No contact details needed. Or call <a href="tel:+18558477020">(855) 847-7020</a>, Mon-Fri 8:30am-5pm ET.</p></div>
+<h2>Mutual of Omaha plans in Florida</h2>
+<p>Medicare Supplement plans are standardized by law, so a Plan G from Mutual of Omaha covers the same benefits as a Plan G from any other carrier. What differs is price, rate history and service.</p>
+<table><tr><th>Plan</th><th>What it covers</th><th>Who it fits</th></tr><tr><td>Plan A</td><td>Core benefits only</td><td>Lowest-cost entry point</td></tr><tr><td>Plan F</td><td>Everything, including the Part B deductible</td><td>Only if you became eligible for Medicare before January 1, 2020</td></tr><tr><td>Plan G</td><td>Everything except the Part B deductible</td><td>The most popular choice for people new to Medicare</td></tr><tr><td>Plan N</td><td>Like Plan G, with small copays on some visits</td><td>Lower premium in exchange for copays</td></tr></table>
+<p>Plan availability can change. We confirm what Mutual of Omaha offers at your ZIP code before you apply.</p>
+<h2>How Mutual of Omaha prices Medigap</h2>
+<ul><li><strong>Attained-age pricing.</strong> Your premium is based on your current age and rises as you get older.</li><li><strong>Tobacco status.</strong> Non-tobacco rates are usually lower.</li><li><strong>Location.</strong> Premiums can vary by ZIP code and county.</li><li><strong>Guaranteed renewable.</strong> Mutual of Omaha cannot cancel your policy because of your health or claims.</li></ul>
+<h2>Why Floridians choose Mutual of Omaha</h2>
+<ul><li>See any doctor or hospital that accepts Medicare, with no network or referrals</li><li>Coverage works across the U.S., useful for snowbirds and travelers</li><li>Plans F, G and N include foreign travel emergency benefits</li><li>No claim forms needed in most cases</li><li>Guaranteed acceptance during your 6-month Medigap Open Enrollment Period</li></ul>
+<h2>Compare other Florida Medicare Supplement carriers</h2>
+<p>Every Plan G is the same coverage by law, so the real comparison is price and how the carrier treats you later. We will put Mutual of Omaha next to the others.</p>
+<p><a href="/humana-medicare/">Humana</a> | <a href="/aetna-medicare/">Aetna</a> | <a href="/cigna-medicare-supplement/">Cigna</a> | <a href="/unitedhealthcare-medicare/">UnitedHealthcare</a> | <a href="/florida-blue-medicare/">Florida Blue</a> | <a href="/insurance-carriers/">All Florida carriers</a></p>
+<p>New to Medicare? See our <a href="/medicare-supplement-quotes/">Medicare Supplement quotes</a>, the <a href="/medicare-advantage-vs-medicare-supplement/">Medicare Advantage vs Medigap guide</a> and the <a href="/faq/medicare-supplement-frequently-asked-questions/">Medicare FAQ</a>. Details on enrolling are on our <a href="/mutual-of-omaha-medicare/">Mutual of Omaha Medicare enrollment page</a>.</p>
+<div class="iha-cta"><h2>Get your Mutual of Omaha quote</h2><p>Free, no obligation. A licensed Florida agent will compare it with other carriers.</p><a class="iha-btn iha-alt" href="https://applyformedsupp.com/?npn=8478911" rel="nofollow">Get My Mutual of Omaha Quote</a><a class="iha-btn" href="tel:+18558477020">Call (855) 847-7020</a><a class="iha-btn" href="/appointment/">Have an Agent Call Me</a></div>
+<h2>Frequently asked questions</h2>
+<details><summary>Which Medicare Supplement plans does Mutual of Omaha sell in Florida?</summary><p>Mutual of Omaha sells standardized Medigap plans in Florida, including Plans A, F, G and N. Plan F is open only to people who became eligible for Medicare before January 1, 2020. Ask us for the plans offered at your ZIP code.</p></details>
+<details><summary>Does Mutual of Omaha use attained-age pricing?</summary><p>Yes. Mutual of Omaha prices Medicare Supplement plans by attained age, so premiums rise as you get older. Rates can also vary by ZIP code and tobacco status, and non-tobacco users usually pay less.</p></details>
+<details><summary>Can I see Mutual of Omaha rates for my ZIP code?</summary><p>Yes. Enter your ZIP code in the rate tool on this page and it opens Mutual of Omaha's quote for your area. You can also call (855) 847-7020 and an agent will compare it with other Florida carriers.</p></details>
+<details><summary>Do I need a doctor network or referrals?</summary><p>No. Medigap has no network. You can see any doctor or hospital in the U.S. that accepts Medicare.</p></details>
+<details><summary>Is there a health questionnaire?</summary><p>Not during your 6-month Medigap Open Enrollment Period, which starts when you are 65 and enrolled in Part B. Outside that window, Mutual of Omaha may ask health questions.</p></details>
+<details><summary>Is the quote free?</summary><p>Yes. Quotes are free and carry no obligation. Our agents are paid by carriers, not by you.</p></details>
+<p class="iha-fine">Florida Health Agents is a licensed independent insurance agency (NPN 14924332). We are not affiliated with or endorsed by the U.S. government or the federal Medicare program. Medicare Supplement plans are standardized by law; premiums, rating method and availability vary by carrier, age, ZIP code and tobacco status. Agents are paid by carriers, not by you. Confirm plan details with Mutual of Omaha before you enroll.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which Medicare Supplement plans does Mutual of Omaha sell in Florida?", "acceptedAnswer": {"@type": "Answer", "text": "Mutual of Omaha sells standardized Medigap plans in Florida, including Plans A, F, G and N. Plan F is open only to people who became eligible for Medicare before January 1, 2020. Ask us for the plans offered at your ZIP code."}}, {"@type": "Question", "name": "Does Mutual of Omaha use attained-age pricing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mutual of Omaha prices Medicare Supplement plans by attained age, so premiums rise as you get older. Rates can also vary by ZIP code and tobacco status, and non-tobacco users usually pay less."}}, {"@type": "Question", "name": "Can I see Mutual of Omaha rates for my ZIP code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Enter your ZIP code in the rate tool on this page and it opens Mutual of Omaha's quote for your area. You can also call (855) 847-7020 and an agent will compare it with other Florida carriers."}}, {"@type": "Question", "name": "Do I need a doctor network or referrals?", "acceptedAnswer": {"@type": "Answer", "text": "No. Medigap has no network. You can see any doctor or hospital in the U.S. that accepts Medicare."}}, {"@type": "Question", "name": "Is there a health questionnaire?", "acceptedAnswer": {"@type": "Answer", "text": "Not during your 6-month Medigap Open Enrollment Period, which starts when you are 65 and enrolled in Part B. Outside that window, Mutual of Omaha may ask health questions."}}, {"@type": "Question", "name": "Is the quote free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Quotes are free and carry no obligation. Our agents are paid by carriers, not by you."}}]}</script>
